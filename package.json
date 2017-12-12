@@ -1,0 +1,15 @@
+{
+  "name": "elm-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  	"build": "elm-make src/index.elm --output=dist/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elm": "^0.18.0"
+  }
+}
