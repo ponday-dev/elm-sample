@@ -1,0 +1,20 @@
+{
+  "name": "elm-simple-starter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "elm-format": "^0.6.1-alpha",
+    "elm": "^0.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "elm make src/Main.elm --output=dist/index.html",
+    "watch": "elm-reactor --port 3000"
+  },
+  "keywords": [
+    "elm"
+  ],
+  "author": "ponday",
+  "license": "ISC"
+}

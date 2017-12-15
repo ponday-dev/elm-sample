@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<div id="container"></div>
+	<script src="./elm.js"></script>
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			const app = Elm.Counter.fullscreen();
+
+			app.ports.inc.subscribe(count => {
+				app.ports.suggestions.send(count + 1);
+			});
+			app.ports.dec.subscribe(count => {
+				app.ports.suggestions.send(count - 1);
+			});
+		});
+	</script>
+</body>
+</html>
