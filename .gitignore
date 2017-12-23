@@ -2,3 +2,4 @@ node_modules/
 01_counter/elm-stuff
 02_interop-javascript/elm-stuff
 03_json-decode/elm-stuff
+04_http/elm-stuff
