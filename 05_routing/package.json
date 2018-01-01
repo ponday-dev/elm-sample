@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "elm make src/Main.elm --output=dist/index.html",
+    "build": "elm make src/Main.elm src/Routing.elm src/foo/Foo.elm src/bar/Bar.elm --output=dist/index.html",
     "watch": "elm-reactor --port 3000",
     "server": "json-server ./server/server.json"
   },
